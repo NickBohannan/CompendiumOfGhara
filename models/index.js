@@ -1,0 +1,89 @@
+const Sequelize = require('sequelize')
+const db = new Sequelize("postgres://localhost:5432/Compendium_of_Ghara")
+
+const Entry = db.define("entry", {
+    category: {
+        type: Sequelize.TEXT,
+        allowNull: true
+    },
+    slug: {
+        type: Sequelize.TEXT,
+        allowNull: true
+    },
+    title: {
+        type: Sequelize.TEXT,
+        allowNull: false
+    },
+    firstName: {
+        type: Sequelize.TEXT,
+        allowNull: true
+    },
+    lastName: {
+        type: Sequelize.TEXT,
+        allowNull: true
+    },
+    imageurl: {
+        type: Sequelize.TEXT,
+        allowNull: true
+    },
+    race: {
+        type: Sequelize.TEXT,
+        allowNull: true
+    },
+    class: {
+        type: Sequelize.TEXT,
+        allowNull: true
+    },
+    alignment: {
+        type: Sequelize.TEXT,
+        allowNull: true
+    },
+    strength: {
+        type: Sequelize.INTEGER,
+        allowNull: true
+    },
+    intelligence: {
+        type: Sequelize.INTEGER,
+        allowNull: true
+    },
+    charisma: {
+        type: Sequelize.INTEGER,
+        allowNull: true
+    },
+    dexterity: {
+        type: Sequelize.INTEGER,
+        allowNull: true
+    },
+    constitution: {
+        type: Sequelize.INTEGER,
+        allowNull: true
+    },
+    wisdom: {
+        type: Sequelize.INTEGER,
+        allowNull: true
+    },
+    feats: {
+        type: Sequelize.TEXT,
+        allowNull: true
+    },
+    staticTraits: {
+        type: Sequelize.TEXT,
+        allowNull: true
+    },
+    dynamicTraits: {
+        type: Sequelize.TEXT,
+        allowNull: true
+    },
+    biography: {
+        type: Sequelize.TEXT,
+        allowNull: true
+    },
+    goals: {
+        type: Sequelize.TEXT,
+        allowNull: true
+    },
+})
+
+Entry.sync();
+
+module.exports = Entry

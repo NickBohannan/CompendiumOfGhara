@@ -1,0 +1,29 @@
+body {
+    background: black;
+}
+
+h1 {
+    font-family: monospace;
+    color: greenyellow;
+}
+
+.db-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#entry-container {
+    box-shadow: 5px 10px 8px black;
+    background-color: black;
+    font-family: monospace;
+    color: greenyellow;
+    font-size: 0.5em;
+    max-width: 250px;
+    max-height: 500px;
+    margin: 15px;
+}
+
+.title {
+    border-bottom: 2px solid greenyellow;
+    padding: 10px;
+}
