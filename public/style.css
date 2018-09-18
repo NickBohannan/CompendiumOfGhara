@@ -1,13 +1,17 @@
 body {
-    background: black;
+    background-image: url("mapbackground.png");
+    background-size: cover;
+    margin: auto;
 }
 
 h1 {
     display: flex;
     justify-content: center;
-    font-family: monospace;
+    font-family: FantaisieArtistique;
     font-size: 4em;
-    color: greenyellow;
+    color: green;
+    background: cornsilk;
+    padding: 0;
 }
 
 .db-container {
@@ -19,46 +23,51 @@ h1 {
 .individual-container {
     margin: auto;
     width: 40em;
-    height: 40em;
-    background: black;
+    height: 50em;
+    background-image: url("containerimage.jpg");
+    background-size: cover;
     font-family: monospace;
     color: greenyellow;
 }
 
 #entry-container {
-    box-shadow: 5px 10px 8px black;
-    background-color: black;
-    font-family: monospace;
-    color: greenyellow;
-    font-size: 1.2em;
+    font-family: FantaisieArtistique;
+    color: black;
+    font-size: 1em;
     max-width: 50em;
-    margin: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
 }
 
 #stat-container {
-    box-shadow: 5px 10px 8px black;
-    background-color: black;
-    font-family: monospace;
-    color: greenyellow;
-    font-size: 1.2em;
+    font-family: FantaisieArtistique;
+    color: black;
+    font-size: 1em;
     max-width: 50em;
-    margin: 15px;
+    padding-left: 2em;
+    padding-right: 2em;
+    text-align: center;
 }
 
 .stat-flex {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .title {
-    border-bottom: 2px solid greenyellow;
-    padding: 10px;
-    font-size: 2em;
+    padding: .5em;
+    text-align: center;
+    font-family: FantaisieArtistique;
+    font-size: 1.5em;
+    color: black;
 }
 
 .title-noborder {
-    font-family: monospace;
-    color: greenyellow;
-    padding: 10px;
-    font-size: 2em;
+    text-align: center;
+    font-family: FantaisieArtistique;
+    color: black;
+    font-size: 3em;
+    padding-top: 1.5em;
 }

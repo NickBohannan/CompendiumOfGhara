@@ -1,11 +1,12 @@
 <html>
 <link rel="stylesheet" type="text/css" href="/style.css" />
-<h1>The Compendium of Ghara
-</h1>
+
 
 <body>
+    <h1>The Compendium of Ghara
+    </h1>
     <div class="individual-container">
-        <div class="title-noborder">Full Name:
+        <div class="title-noborder">
             <%= entry.firstName %>
             <%= entry.lastName %>
         </div>
@@ -34,7 +35,10 @@
         </div>
         <div class="title">Misc.</div>
         <div id="entry-container">
-            <%= entry.feats %>
+            <%= entry.feats %><br>
+            <%= entry.staticTraits %><br>
+            <%= entry.dynamicTraits %><br>
+            <%= entry.goals %>
         </div>
     </div>
 </body>
