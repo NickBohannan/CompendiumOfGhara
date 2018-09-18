@@ -1,0 +1,42 @@
+<html>
+<link rel="stylesheet" type="text/css" href="/style.css" />
+<h1>The Compendium of Ghara
+</h1>
+
+<body>
+    <div class="individual-container">
+        <div class="title-noborder">Full Name:
+            <%= entry.firstName %>
+            <%= entry.lastName %>
+        </div>
+        <div class="title">Stats</div>
+        <div class="stat-flex">
+            <div id="stat-container">
+                strength:
+                <%= entry.strength %><br>
+                intellect:
+                <%= entry.intellect %><br>
+                charisma:
+                <%= entry.charisma %>
+            </div>
+            <div id="stat-container">
+                dexterity:
+                <%= entry.dexterity %><br>
+                constitution:
+                <%= entry.constitution %><br>
+                wisdom:
+                <%= entry.wisdom %><br>
+            </div>
+        </div>
+        <div class="title">Biography</div>
+        <div id="entry-container">
+            <%= entry.biography %>
+        </div>
+        <div class="title">Misc.</div>
+        <div id="entry-container">
+            <%= entry.feats %>
+        </div>
+    </div>
+</body>
+
+</html>

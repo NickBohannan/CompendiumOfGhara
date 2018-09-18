@@ -3,13 +3,26 @@ body {
 }
 
 h1 {
+    display: flex;
+    justify-content: center;
     font-family: monospace;
+    font-size: 4em;
     color: greenyellow;
 }
 
 .db-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+}
+
+.individual-container {
+    margin: auto;
+    width: 40em;
+    height: 40em;
+    background: black;
+    font-family: monospace;
+    color: greenyellow;
 }
 
 #entry-container {
@@ -17,13 +30,35 @@ h1 {
     background-color: black;
     font-family: monospace;
     color: greenyellow;
-    font-size: 0.5em;
-    max-width: 250px;
-    max-height: 500px;
+    font-size: 1.2em;
+    max-width: 50em;
     margin: 15px;
+}
+
+#stat-container {
+    box-shadow: 5px 10px 8px black;
+    background-color: black;
+    font-family: monospace;
+    color: greenyellow;
+    font-size: 1.2em;
+    max-width: 50em;
+    margin: 15px;
+}
+
+.stat-flex {
+    display: flex;
+    flex-direction: row;
 }
 
 .title {
     border-bottom: 2px solid greenyellow;
     padding: 10px;
+    font-size: 2em;
+}
+
+.title-noborder {
+    font-family: monospace;
+    color: greenyellow;
+    padding: 10px;
+    font-size: 2em;
 }

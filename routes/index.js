@@ -4,6 +4,18 @@ const Entry = require('../models/index');
 const seed = require("../seed")
 
 router.get("/", (req, res, next) => {
+    res.render("landingpage");
+})
+
+router.get("/entries/:ident", (req, res, next) => {
+    Entry.findOne({ where: { id: req.params.ident } }).then((entry) => {
+        res.render('individual', {
+            entry: entry
+        })
+    })
+})
+
+router.get("/all", (req, res, next) => {
     Entry.findAll().then((entries) => {
         res.render('index', {
             title: "The Compendium of Ghara",

@@ -7,7 +7,7 @@ const functionIndex = require('./js/index')
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static(__dirname + '/public'))
 
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views'))
