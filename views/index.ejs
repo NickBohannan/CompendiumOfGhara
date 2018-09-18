@@ -7,7 +7,7 @@
     </h1>
     <div class="db-container">
         <% entries.forEach(function(entry) { %>
-        <% let url = "http://localhost:3000/entries/" + entry.id %>
+        <% let url = "http://localhost:3001/entries/" + entry.id %>
         <a class="title-noborder" href=<%=url %>>
             <%= entry.title %></a>
         <!-- <div class="firstName">

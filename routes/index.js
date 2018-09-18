@@ -7,8 +7,8 @@ router.get("/", (req, res, next) => {
     res.render("landingpage");
 })
 
-router.get("/entries/:ident", (req, res, next) => {
-    Entry.findOne({ where: { id: req.params.ident } }).then((entry) => {
+router.get("/entries/:id", (req, res, next) => {
+    Entry.findOne({ where: { id: req.params.id } }).then((entry) => {
         res.render('individual', {
             entry: entry
         })
@@ -37,7 +37,34 @@ router.get('/seed', (req, res, next) => {
 })
 
 router.get('/add', (req, res) => {
-    res.render('addpage');
+    res.render('addpage', {
+        title: "The Compendium of Ghara",
+    });
 });
+
+router.post('/add', (req, res) => {
+    Entry.create({
+        category: req.body.category,
+        title: req.body.title,
+        firstName: req.body.firstName,
+        lastName: req.body.lastName,
+        race: req.body.race,
+        class: req.body.class,
+        alignment: req.body.alignment,
+        strength: req.body.strength,
+        intelligence: req.body.intelligence,
+        charisma: req.body.charisma,
+        dexterity: req.body.dexterity,
+        constitution: req.body.constitution,
+        wisdom: req.body.wisdom,
+        feats: req.body.feats,
+        staticTraits: req.body.staticTraits,
+        dynamicTraits: req.body.dynamicTraits,
+        biography: req.body.biography,
+        goals: req.body.goals
+    }).catch(function (err) {
+        console.log(err)
+    })
+})
 
 module.exports = router
