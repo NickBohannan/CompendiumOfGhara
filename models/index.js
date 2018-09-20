@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize')
-const db = new Sequelize("postgres://localhost:5432/Compendium_of_Ghara")
+const db = new Sequelize("postgres://jisqkijhgjfopt:9cbfda68e47740cf055639be760ae7c1743b2c0c47f996dc090f412b35171533@ec2-54-225-97-112.compute-1.amazonaws.com:5432/df90u7r67d1g9c")
 
 const Entry = db.define("entry", {
     category: {
