@@ -7,7 +7,7 @@
     </h1>
     <div class="db-container">
         <% entries.forEach(function(entry) { %>
-        <% let url = process.env.DATABASE_URL + entry.id %>
+        <% let url = "https://compendiumofghara.herokuapp.com/entries/" + entry.id %>
         <a class="title-noborder" href=<%=url %>>
             <%= entry.title %></a>
         <!-- <div class="firstName">
