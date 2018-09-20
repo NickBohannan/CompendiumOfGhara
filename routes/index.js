@@ -67,4 +67,8 @@ router.post('/add', (req, res) => {
     })
 })
 
+router.get('*', (req, res) => {
+    res.error("Oops, nothing here")
+})
+
 module.exports = router
