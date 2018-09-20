@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize')
 
-const db
+let db
 
 if (process.env.DATABASE_URL) {
     // the application is executed on Heroku ... use the postgres database
