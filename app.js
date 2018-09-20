@@ -3,7 +3,7 @@ const app = express()
 const bodyParser = require('body-parser')
 const indexRouter = require('./routes/index');
 const path = require('path')
-const functionIndex = require('./js/index')
+const Entry = require('./models/index')
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -17,5 +17,7 @@ app.use('/', indexRouter)
 app.listen(3001, () => {
     console.log("Server listening on port 3001")
 })
+
+Entry.sync()
 
 module.exports = app

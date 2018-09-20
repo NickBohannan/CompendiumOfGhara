@@ -1,5 +1,17 @@
 const Sequelize = require('sequelize')
-const db = new Sequelize("postgres://jisqkijhgjfopt:9cbfda68e47740cf055639be760ae7c1743b2c0c47f996dc090f412b35171533@ec2-54-225-97-112.compute-1.amazonaws.com:5432/df90u7r67d1g9c")
+
+const db
+
+if (process.env.DATABASE_URL) {
+    // the application is executed on Heroku ... use the postgres database
+    db = new Sequelize(process.env.DATABASE_URL, {
+        dialect: 'postgres',
+        protocol: 'postgres',
+        port: match[4],
+        host: match[3],
+        logging: true //false
+    })
+}
 
 const Entry = db.define("entry", {
     category: {
@@ -83,7 +95,5 @@ const Entry = db.define("entry", {
         allowNull: true
     },
 })
-
-Entry.sync();
 
 module.exports = Entry
