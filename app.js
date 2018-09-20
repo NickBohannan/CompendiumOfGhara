@@ -9,13 +9,16 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'))
 
+const port = process.env.PORT
+
+app.set('port', port)
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views'))
 
 app.use('/', indexRouter)
 
-app.listen(3001, () => {
-    console.log("Server listening on port 3001")
+app.listen(port, () => {
+    console.log("Server listening on port " + port)
 })
 
 Entry.sync()
