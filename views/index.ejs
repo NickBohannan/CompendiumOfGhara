@@ -9,7 +9,8 @@
         <% entries.forEach(function(entry) { %>
         <% let url = "https://compendiumofghara.herokuapp.com/entries/" + entry.id %>
         <a class="title-noborder" href=<%=url %>>
-            <%= entry.title %></a>
+            <%= entry.firstName %>
+            <%= entry.lastName %></a>
         <!-- <div class="firstName">
                 <%= entry.firstName %>
             </div>
