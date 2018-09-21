@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'))
 
-const port = process.env.PORT
+const port = process.env.PORT || 3000
 
 app.set('port', port)
 app.set('view engine', 'ejs')
