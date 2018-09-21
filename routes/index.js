@@ -62,16 +62,17 @@ router.post('/add', (req, res) => {
         dynamicTraits: req.body.dynamicTraits,
         biography: req.body.biography,
         goals: req.body.goals
-    }).tnen(() => {
+    }).then(() => {
         res.render('landingpage', {
             title: "The Compendium of Ghara"
-        }).catch(function (err) {
-            console.log(err)
         })
+    }).catch(function (err) {
+        console.log(err)
     })
+})
 
-    router.get('*', (req, res) => {
-        res.error("Oops, nothing here")
-    })
+router.get('*', (req, res) => {
+    res.error("Oops, nothing here")
+})
 
-    module.exports = router
+module.exports = router
