@@ -11,6 +11,7 @@ h1 {
     font-size: 4em;
     color: green;
     background: cornsilk;
+    margin-bottom: 0px;
 }
 
 .nav {
@@ -20,6 +21,11 @@ h1 {
     justify-content: space-around;
     background: cornsilk;
     width: 50%;
+    margin-bottom: 15px;
+}
+
+.nav a {
+    color: green;
 }
 
 .form-container {

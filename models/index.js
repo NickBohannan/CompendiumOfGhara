@@ -3,7 +3,6 @@ const Sequelize = require('sequelize')
 let db
 
 if (process.env.HOME == "/Users/nickbohannan") {
-    // the application is executed on Heroku ... use the postgres database
     db = new Sequelize('postgres://localhost:5432/Compendium_of_Ghara')
 } else {
     db = new Sequelize(process.env.DATABASE_URL)
