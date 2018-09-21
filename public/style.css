@@ -11,17 +11,20 @@ h1 {
     font-size: 4em;
     color: green;
     background: cornsilk;
-    padding: 0;
+}
+
+.nav {
+    margin: auto;
+    font-family: FantaisieArtistique;
+    display: flex;
+    justify-content: space-around;
+    background: cornsilk;
+    width: 50%;
 }
 
 .form-container {
     display: flex;
     justify-content: center;
-}
-
-form {
-    background: cornsilk;
-    min-width: 600px;
 }
 
 label {
@@ -30,12 +33,24 @@ label {
 }
 
 input {
-    width: 40%;
+    width: 80%;
     margin-bottom: 10px;
 }
 
 input[type="number"] {
     width: 10%
+}
+
+.form-column {
+    background: cornsilk;
+    min-width: 300px;
+    text-align: center;
+}
+
+.index-list {
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-family: FantaisieArtistique;
 }
 
 

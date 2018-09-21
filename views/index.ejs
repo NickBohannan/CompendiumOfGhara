@@ -5,60 +5,17 @@
     <h1>
         <%= title %>
     </h1>
+    <div class="nav">
+        <a href="/">Home</a>
+        <a href="add">Add an Entry</a>
+        <a href="all">View all Entries</a>
+    </div>
     <div class="db-container">
         <% entries.forEach(function(entry) { %>
-        <% let url = "https://compendiumofghara.herokuapp.com/entries/" + entry.id %>
-        <a class="title-noborder" href=<%=url %>>
+        <% let url = "entries/" + entry.id %>
+        <a class="index-list" href=<%=url %>>
             <%= entry.firstName %>
             <%= entry.lastName %></a>
-        <!-- <div class="firstName">
-                <%= entry.firstName %>
-            </div>
-            <div class="lastName">
-                <%= entry.lastName %>
-            </div>
-            <div class="race">
-                <%= entry.race %>
-            </div>
-            <div class="class">
-                <%= entry.class %>
-            </div>
-            <div class="alignment">
-                <%= entry.alignment %>
-            </div>
-            <div class="strength">
-                <%= entry.strength %>
-            </div>
-            <div class="intelligence">
-                <%= entry.intelligence %>
-            </div>
-            <div class="charisma">
-                <%= entry.charisma %>
-            </div>
-            <div class="dexterity">
-                <%= entry.dexterity %>
-            </div>
-            <div class="constitution">
-                <%= entry.constitution %>
-            </div>
-            <div class="wisdom">
-                <%= entry.wisdom %>
-            </div>
-            <div class="feats">
-                <%= entry.feats %>
-            </div>
-            <div class="staticTraits">
-                <%= entry.staticTraits %>
-            </div>
-            <div class="dynamicTraits">
-                <%= entry.dynamicTraits %>
-            </div>
-            <div class="biography">
-                <%= entry.biography %>
-            </div>
-            <div class="goals">
-                <%= entry.goals %>
-            </div> -->
         <% }) %>
     </div>
 </body>

@@ -5,47 +5,54 @@
 </h1>
 
 <body>
-    <div class="form-container">
-        <form method="POST" action="/add">
-            <label>Category</label>
-            <input type="text" name="category"><br>
-            <label>Title</label>
-            <input type="text" name="title"><br>
-            <label>First Name</label>
-            <input type="text" name="firstName"><br>
-            <label>Last Name</label>
-            <input type="text" name="lastName"><br>
-            <label>Race</label>
-            <input type="text" name=""><br>
-            <label>Class</label>
-            <input type="text" name="class"><br>
-            <label>Alignment</label>
-            <input type="text" name="alignment"><br>
-            <label>Strength</label>
-            <input type="number" name="strength"><br>
-            <label>Intelligence</label>
-            <input type="number" name="intelligence"><br>
-            <label>Charisma</label>
-            <input type="number" name="charisma"><br>
-            <label>Dexterity</label>
-            <input type="number" name="dexterity"><br>
-            <label>Constitution</label>
-            <input type="number" name="constitution"><br>
-            <label>Wisdom</label>
-            <input type="number" name="wisdom"><br>
-            <label>Feats</label>
-            <input type="text" name="feats"><br>
-            <label>Static Traits</label>
-            <input type="text" name="staticTraits"><br>
-            <label>Dynamic Traits</label>
-            <input type="text" name="dynamicTraits"><br>
-            <label>Biography</label>
-            <input type="text" name="biography"><br>
-            <label>Goals</label>
-            <input type="text" name="goals"><br><br>
-            <input type="submit" value="Create Entry">
-        </form>
-    </div>
+
+    <form method="POST" action="/add">
+        <div class="form-container">
+            <div class="form-column">
+                <label>Category</label><br>
+                <input type="text" name="category"><br>
+                <label>Title</label><br>
+                <input type="text" name="title"><br>
+                <label>First Name</label><br>
+                <input type="text" name="firstName"><br>
+                <label>Last Name</label><br>
+                <input type="text" name="lastName"><br>
+                <label>Race</label><br>
+                <input type="text" name=""><br>
+                <label>Class</label><br>
+                <input type="text" name="class"><br>
+                <label>Alignment</label><br>
+                <input type="text" name="alignment">
+            </div>
+            <div class="form-column">
+                <label>Strength</label><br>
+                <input type="number" name="strength"><br>
+                <label>Intelligence</label><br>
+                <input type="number" name="intelligence"><br>
+                <label>Charisma</label><br>
+                <input type="number" name="charisma"><br>
+                <label>Dexterity</label><br>
+                <input type="number" name="dexterity"><br>
+                <label>Constitution</label><br>
+                <input type="number" name="constitution"><br>
+                <label>Wisdom</label><br>
+                <input type="number" name="wisdom">
+            </div>
+            <div class="form-column">
+                <label>Feats</label><br>
+                <input type="text" name="feats"><br>
+                <label>Static Traits</label><br>
+                <input type="text" name="staticTraits"><br>
+                <label>Dynamic Traits</label><br>
+                <input type="text" name="dynamicTraits"><br>
+                <label>Biography</label><br>
+                <textarea class="bio" type="text" name="biography"></textarea> <br>
+                <label>Goals</label><br>
+                <textarea class="bio" type="text" name="goals"></textarea><br><br>
+                <input type="submit" value="Create Entry">
+            </div>
+        </div>
+    </form>
 </body>
 
 </html>

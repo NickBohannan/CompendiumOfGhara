@@ -19,7 +19,7 @@ router.get("/all", (req, res, next) => {
     Entry.findAll().then((entries) => {
         res.render('index', {
             title: "The Compendium of Ghara",
-            entries: entries
+            entries: entries,
         })
     })
 })
@@ -72,7 +72,7 @@ router.post('/add', (req, res) => {
 })
 
 router.get('*', (req, res) => {
-    res.error("Oops, nothing here")
+    res.send("Oops, nothing here")
 })
 
 module.exports = router
