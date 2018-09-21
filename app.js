@@ -18,6 +18,7 @@ app.set('views', path.join(__dirname, 'views'))
 app.use('/', indexRouter)
 
 app.listen(port, () => {
+    console.log(process.env)
     console.log("Server listening on port " + port)
 })
 

@@ -14,10 +14,31 @@ h1 {
     padding: 0;
 }
 
-form {
-    width: 30%;
-    margin: auto;
+.form-container {
+    display: flex;
+    justify-content: center;
 }
+
+form {
+    background: cornsilk;
+    min-width: 600px;
+}
+
+label {
+    font-family: FantaisieArtistique;
+    font-size: 1em;
+}
+
+input {
+    width: 40%;
+    margin-bottom: 10px;
+}
+
+input[type="number"] {
+    width: 10%
+}
+
+
 
 .db-container {
     display: flex;
