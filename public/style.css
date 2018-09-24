@@ -20,12 +20,14 @@ h1 {
     display: flex;
     justify-content: space-around;
     background: cornsilk;
-    width: 50%;
+    width: 30%;
     margin-bottom: 15px;
+    border-radius: 0 0 8px 8px;
 }
 
 .nav a {
     color: green;
+    width: 100px;
 }
 
 .form-container {
@@ -52,6 +54,7 @@ input[type="number"] {
     background: cornsilk;
     min-width: 300px;
     text-align: center;
+    padding: 5px;
 }
 
 .index-list {

@@ -25,7 +25,9 @@ router.get("/all", (req, res, next) => {
 })
 
 router.get("/api", (req, res, next) => {
-    res.json(Entry)
+    Entry.findAll().then((entries) => {
+        res.json(entries)
+    })
 })
 
 router.get('/seed', (req, res, next) => {
