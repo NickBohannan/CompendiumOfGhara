@@ -7,7 +7,7 @@ body {
 h1 {
     display: flex;
     justify-content: center;
-    font-family: FantaisieArtistique;
+    font-family: Georgia;
     font-size: 4em;
     color: green;
     background: cornsilk;
@@ -16,7 +16,7 @@ h1 {
 
 .nav {
     margin: auto;
-    font-family: FantaisieArtistique;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
     justify-content: space-around;
     background: cornsilk;
@@ -27,7 +27,7 @@ h1 {
 
 .nav a {
     color: green;
-    width: 100px;
+    width: 120px;
 }
 
 .form-container {
@@ -36,7 +36,7 @@ h1 {
 }
 
 label {
-    font-family: FantaisieArtistique;
+    font-family: Georgia;
     color: green;
     font-size: 1em;
 }
@@ -60,7 +60,7 @@ input[type="number"] {
 .index-list {
     font-size: 14px;
     margin-bottom: 5px;
-    font-family: FantaisieArtistique;
+    font-family: Georgia;
     color: green;
 }
 
@@ -84,7 +84,7 @@ input[type="number"] {
 }
 
 #entry-container {
-    font-family: FantaisieArtistique;
+    font-family: Georgia;
     color: black;
     font-size: 1em;
     max-width: 50em;
@@ -94,7 +94,7 @@ input[type="number"] {
 }
 
 #stat-container {
-    font-family: FantaisieArtistique;
+    font-family: Georgia;
     color: black;
     font-size: 1em;
     max-width: 50em;
@@ -112,14 +112,14 @@ input[type="number"] {
 .title {
     padding: .5em;
     text-align: center;
-    font-family: FantaisieArtistique;
+    font-family: Georgia;
     font-size: 1.5em;
     color: black;
 }
 
 .title-noborder {
     text-align: center;
-    font-family: FantaisieArtistique;
+    font-family: Georgia;
     color: black;
     font-size: 3em;
     padding-top: 1.5em;
