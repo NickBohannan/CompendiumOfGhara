@@ -15,6 +15,10 @@ router.get("/entries/:id", (req, res, next) => {
     })
 })
 
+router.get("/search", (req, res, next) => {
+    res.render('search');
+})
+
 router.get("/all", (req, res, next) => {
     Entry.findAll().then((entries) => {
         res.render('index', {

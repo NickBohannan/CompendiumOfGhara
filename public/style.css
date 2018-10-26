@@ -4,7 +4,7 @@ body {
     margin: auto;
 }
 
-h1 {
+#compendium {
     display: flex;
     justify-content: center;
     font-family: Georgia;
