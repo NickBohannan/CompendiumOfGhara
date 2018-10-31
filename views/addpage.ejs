@@ -1,24 +1,22 @@
 <html>
 <link rel="stylesheet" type="text/css" href="/style.css" />
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 
 <body>
     <%- include('header') -%>
     <form method="POST" action="/add">
         <div class="type-center">
-            <div>
-                <label>Type</label>
-            </div>
-            <div>
-                <select id='type' name="category">
-                    <option value="Individual">Individual</option>
-                    <option value="Place">Place</option>
-                    <option value="Group">Group</option>
-                    <option value="Other">Other</option>
-                </select>
+            <div class="type-container">
+                <div class="type-title">
+                    <label>Type</label>
+                </div>
+                <div>
+                    <select id='type' name="category">
+                        <option value="Individual">Individual</option>
+                        <option value="Place">Place</option>
+                        <option value="Group">Group</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
             </div>
         </div>
         <div class="form-container">
