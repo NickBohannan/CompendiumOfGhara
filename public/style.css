@@ -18,6 +18,7 @@ body {
 
 .type-title {
     text-align: center;
+    margin-bottom: 2px;
 }
 
 #compendium {
@@ -63,7 +64,7 @@ input {
 }
 
 input[type="number"] {
-    width: 10%
+    width: 15%
 }
 
 .form-column {
