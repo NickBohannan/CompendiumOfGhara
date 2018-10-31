@@ -9,17 +9,12 @@
     <%- include('header') -%>
     <form method="POST" action="/search">
         <div class="form-container">
-            <div class="dropdown">
-                <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Type
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Individual</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Place</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Group</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Other</a></li>
-                </ul>
-            </div>
+            <select id='type'>
+                <option value="0">Individual</option>
+                <option value="1">Place</option>
+                <option value="2">Group</option>
+                <option value="3">Other</option>
+            </select>
         </div>
     </form>
 </body>
